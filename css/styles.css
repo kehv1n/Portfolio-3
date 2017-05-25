@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+    font-family: 'BrandonGrot';
+    src: url('../assets/fonts/Brandon_bld.otf');
+}
+
+body {
+  height: 3000px;
+  background-color: #111;
+  font-family: 'Helvetica' ,'arial',sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 4% 17%;
+  height: 12vh;
+  background-color: #111;
+}
+
+.header h1  {
+  font-family: 'BrandonGrot';
+  font-size: 6vh;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display:none;
+}
+
+.header p {
+  margin-top: 5px;
+  font-weight: normal;
+  display:none;
+}
+
+.header > nav , p {
+  font-family: 'Helvetica' ,'arial',sans-serif;
+  font-size: 2vh;
+
+}
+
+.header a {
+  text-decoration: none;
+  color:  #111;
+  display: flex;
+  list-style: none;
+}
+
+.header ul {
+  list-style: none;
+  display: flex
+}
+
+nav {
+  float: right;
+}
+
+
+nav  li {
+  margin: 0 10px;
+}
+
+nav > ul li {
+  font-weight: 300;
+}
+
+nav > ul li a:hover {
+  color: #E15119;
+  transition: 0.5s;
+}
+
+.socials li {
+  margin: 5px 10px;
+}
+
+.socials {
+  margin-top: 15px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  right: 15px;
+}
+
+.color  {
+   color: #E15119;
+}
+
+.icon {
+  color: white;
+  font-size: 17px;
+}
+.dots {
+  margin: 10px;
+}
+
+.circle {
+  padding: 5px 8px;
+  display: inline-block;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background-color: #111;
+  /*-moz-box-shadow: 0px 0px 2px #888;
+  -webkit-box-shadow: 0px 0px 2px #888;
+  box-shadow: 0px 0px 2px #888;*/
+}
+
+.circle:hover {
+  background-color: #E15119;
+  transition: 0.5s;
+}
+
+.facebook {
+  padding: 5px 12px;
+}
+
+.icon {
+  display:none;
+}
+
+.ion-social-facebook {
+  position: relative;
+}
+
+.first {
+margin-top: 45%
+}
+
+
+.first > blockquote h1 {
+  font-size: 35px;
+}
+
+.first > blockquote h1, p  {
+  color: white;
+  font-weight: 300;
+  display:none;
+}
+
+.first > blockquote p {
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 10px;
+  }
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.arrow > i {
+  color: white;
+  font-size: 35px;
+  animation: blink 0.5s linear infinite;
+  display:none;
+}
+
+@keyframes blink {
+  80% { opacity: 0; }
+}
