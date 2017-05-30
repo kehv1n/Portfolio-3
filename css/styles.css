@@ -37,13 +37,14 @@ body {
   font-size: 6vh;
   text-transform: uppercase;
   letter-spacing: 3px;
-  display:none;
+  visibility: hidden;
+  transition: 5s;
 }
 
 .header p {
   margin-top: 5px;
   font-weight: normal;
-  display:none;
+  visibility: hidden;
 }
 
 .header > nav , p {
@@ -130,7 +131,7 @@ nav > ul li a:hover {
 }
 
 .icon {
-  display:none;
+  visibility: hidden;
 }
 
 .ion-social-facebook {
@@ -149,7 +150,7 @@ margin-top: 45%
 .first > blockquote h1, p  {
   color: white;
   font-weight: 300;
-  display:none;
+  visibility: hidden;
 }
 
 .first > blockquote p {
@@ -168,7 +169,7 @@ margin-top: 45%
   color: white;
   font-size: 35px;
   animation: blink 0.5s linear infinite;
-  display:none;
+  visibility: hidden;
 }
 
 @keyframes blink {
