@@ -1,7 +1,8 @@
 ///DOCUMENT READY
 $(document).ready(function() {
 
-  function fadeName(){
+
+  function fadeName(){ //Begin fades
     $('#header h1').fadeTo(1000, 1.0, function(){
       fadeDev();
     });
@@ -20,7 +21,7 @@ $(document).ready(function() {
     });
   }
 
-  function fadeQuote(){
+  function fadeQuote(){ //final fade
     $('.first').find('h1, p, i').fadeTo(500,1.0);
   }
 

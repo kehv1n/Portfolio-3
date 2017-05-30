@@ -27,7 +27,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 4% 17%;
+  padding: 4% 16%;
   height: 12vh;
   background-color: #111;
 }
@@ -147,7 +147,7 @@ margin-bottom: 11%;
   font-size: 35px;
 }
 
-.first > blockquote h1, p  {
+.first > blockquote h1, .first > blockquote p  {
   color: white;
   font-weight: 300;
   opacity: 0;
