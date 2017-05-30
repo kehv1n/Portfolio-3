@@ -2,24 +2,26 @@
 $(document).ready(function() {
 
   function fadeName(){
-    $('#header h1').css("visibility","visible").css("transition"," 10s");
+    $('#header h1').fadeTo(1000, 1.0, function(){
+      fadeDev();
+    });
   }
 
   fadeName();
   function fadeDev(){
-    $('#header p').hide().fadeIn(1000, function(){
+    $('#header p').fadeTo(800,1.0, function(){
       fadeIcons();
     });
   }
 
   function fadeIcons(){
-    $('#header i').hide().fadeIn(500, function(){
+    $('#header i').fadeTo(500,1.0, function(){
       fadeQuote();
     });
   }
 
   function fadeQuote(){
-    $('.first').find('h1, p, i').hide().fadeIn(1000);
+    $('.first').find('h1, p, i').fadeTo(500,1.0);
   }
 
   fadeName();
