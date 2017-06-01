@@ -13,6 +13,7 @@ body {
   background-color: #111;
   font-family: 'Helvetica' ,'arial',sans-serif;
   font-weight: 300;
+   transition: 1s all;
 }
 
 .container {
@@ -30,6 +31,7 @@ body {
   padding: 4% 16%;
   height: 12vh;
   background-color: #111;
+  transition: 1s all;
 }
 
 .header h1  {
@@ -38,12 +40,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   opacity: 0;
+  transition: 0.8s all;
 }
 
 .header p {
   margin-top: 5px;
   font-weight: normal;
   opacity: 0;
+  transition: 0.8s all;
 }
 
 .header > nav , p {
@@ -65,7 +69,9 @@ body {
 }
 
 nav {
-  float: right;
+  position: relative;
+  left: 800px;
+  bottom: 10px;
 }
 
 
@@ -74,7 +80,7 @@ nav  li {
 }
 
 nav > ul li {
-  font-weight: 300;
+  font-weight: normal;
 }
 
 nav > ul li a:hover {
@@ -102,7 +108,7 @@ nav > ul li a:hover {
 
 .icon {
   color: white;
-  font-size: 17px;
+  font-size: 2vh;
 }
 .dots {
   margin: 10px;
@@ -139,12 +145,12 @@ nav > ul li a:hover {
 
 .first {
 margin-top: 45%;
-margin-bottom: 11%;
+margin-bottom: 25%;
 }
 
 
 .first > blockquote h1 {
-  font-size: 35px;
+  font-size: 5vh;
 }
 
 .first > blockquote h1, .first > blockquote p  {
@@ -154,7 +160,7 @@ margin-bottom: 11%;
 }
 
 .first > blockquote p {
-  font-size: 25px;
+  font-size: 4vh;
   margin-left: 30px;
   margin-top: 10px;
   }
@@ -167,11 +173,45 @@ margin-bottom: 11%;
 
 .arrow > i {
   color: white;
-  font-size: 35px;
+  font-size: 4vh;
   animation: blink 0.5s linear infinite;
   opacity: 0;
 }
 
 @keyframes blink {
   80% { opacity: 0; }
+}
+
+.fadeBg{
+  background-color: white;
+}
+
+.fadeBlackText {
+  color: #111;
+}
+
+.bio {
+  margin-bottom: 220px;
+}
+
+.bio h1 {
+  font-weight: 100;
+  }
+
+.bio h1:nth-child(1) {
+  margin-bottom: 100px;
+}
+.companies>li{
+  list-style: none;
+  text-decoration: none;
+  font-size: 2em;
+  color: red;
+  }
+.companies>li>ul li:first-child{
+
+  color: green;
+}
+.companies>li>ul li:last-child{
+
+  color: blue;
 }
