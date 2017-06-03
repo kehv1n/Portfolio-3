@@ -36,7 +36,7 @@ body {
 
 .header h1  {
   font-family: 'BrandonGrot';
-  font-size: 6vh;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 3px;
   opacity: 0;
@@ -52,7 +52,7 @@ body {
 
 .header > nav , p {
   font-family: 'Helvetica' ,'arial',sans-serif;
-  font-size: 2vh;
+  font-size:0.8em;
 
 }
 
@@ -108,7 +108,7 @@ nav > ul li a:hover {
 
 .icon {
   color: white;
-  font-size: 2vh;
+  font-size: 1em;
 }
 .dots {
   margin: 10px;
@@ -144,8 +144,8 @@ nav > ul li a:hover {
 }
 
 .first {
-margin-top: 45%;
-margin-bottom: 25%;
+  margin-top: 45%;
+  margin-bottom: 25%;
 }
 
 
@@ -194,24 +194,96 @@ margin-bottom: 25%;
   margin-bottom: 220px;
 }
 
-.bio h1 {
+.bio h1{
+  margin-bottom: 80px;
   font-weight: 100;
-  }
-
-.bio h1:nth-child(1) {
-  margin-bottom: 100px;
 }
-.companies>li{
+
+.emphasis {
+  font-weight: 400;
+}
+
+.companies li {
   list-style: none;
-  text-decoration: none;
-  font-size: 2em;
-  color: red;
-  }
-.companies>li>ul li:first-child{
-
-  color: green;
 }
-.companies>li>ul li:last-child{
 
-  color: blue;
+.companies li {
+  list-style: none;
+}
+.names {
+  font-size: 1em;
+}
+
+.timeSpent {
+  z-index: -1;
+  POSITION: relative;
+  left: 80px;
+  font-size: 0.5em;
+  background-color: #313131;
+  color: white;
+  padding: 2px;
+  bottom: 35px;
+  border-radius: 10px
+}
+
+
+.timeSpent .names {
+  margin: 10px;
+}
+
+.experience > h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.tsFix{
+  left: 163px;
+}
+
+.position {
+  font-weight: bold;
+}
+
+.moreInfoDrop {
+  position: relative;
+  bottom: 17px;
+  visibility: hidden;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  z-index: -1;
+  width: 60%;
+  display: none;
+}
+
+.companies li:hover .moreInfoDrop {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#path {
+  stroke-dasharray:20;
+  animation: dash 5s linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+
+#arrowDrop {
+  z-index: 1;
+}
+
+.exerpt {
+  display: inline;
+}
+
+.tools {
+  display: inline;
+  background-color: lightgrey;
+  font-size: 0.3em;
+  padding: 3px;
+  border-radius: 5px;
 }

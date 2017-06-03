@@ -38,12 +38,19 @@ $(document).ready(function() {
     });
   }
 
-  function startAtTheTop() {
-    $('body').scrollTop(0);
-  }
 
-  startAtTheTop();
+
+
+
   backgroundChange();
   fadeName();
+
+
+
+
+
 });
+
+
+
 //END OF DOCUMENT READY
