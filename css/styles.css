@@ -19,19 +19,16 @@ body {
 .container {
   max-width: 980px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 50px;``
 }
 
 .header {
   color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  padding: 4% 16%;
-  height: 12vh;
   background-color: #111;
   transition: 1s all;
+  position: fixed;
+  top: 0;
+  margin-top: 3%;
 }
 
 .header h1  {
@@ -121,9 +118,6 @@ nav > ul li a:hover {
   -webkit-border-radius: 100px;
   border-radius: 100px;
   background-color: #111;
-  /*-moz-box-shadow: 0px 0px 2px #888;
-  -webkit-box-shadow: 0px 0px 2px #888;
-  box-shadow: 0px 0px 2px #888;*/
 }
 
 .circle:hover {
@@ -144,13 +138,13 @@ nav > ul li a:hover {
 }
 
 .first {
-  margin-top: 45%;
-  margin-bottom: 25%;
+  margin-top: 50%;
+  margin-bottom: 30%;
 }
 
 
 .first > blockquote h1 {
-  font-size: 5vh;
+  font-size: 3em;
 }
 
 .first > blockquote h1, .first > blockquote p  {
@@ -160,7 +154,7 @@ nav > ul li a:hover {
 }
 
 .first > blockquote p {
-  font-size: 4vh;
+  font-size: 2em;
   margin-left: 30px;
   margin-top: 10px;
   }
@@ -173,7 +167,7 @@ nav > ul li a:hover {
 
 .arrow > i {
   color: white;
-  font-size: 4vh;
+  font-size: 2em;
   animation: blink 0.5s linear infinite;
   opacity: 0;
 }
@@ -248,7 +242,7 @@ nav > ul li a:hover {
   position: relative;
   bottom: 17px;
   visibility: hidden;
-  transition: visibility 0.5s, opacity 0.5s linear;
+  transition: visibility 0.8s, opacity 0.8s linear;
   z-index: -1;
   width: 60%;
   display: none;
@@ -260,21 +254,6 @@ nav > ul li a:hover {
   opacity: 1;
 }
 
-#path {
-  stroke-dasharray:20;
-  animation: dash 5s linear;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-
-
-#arrowDrop {
-  z-index: 1;
-}
 
 .exerpt {
   display: inline;
