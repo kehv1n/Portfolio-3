@@ -252,16 +252,18 @@ nav > ul li a:hover {
   position: relative;
   bottom: 17px;
   visibility: hidden;
-  transition: visibility 0.8s, opacity 0.8s linear;
   z-index: -1;
   width: 60%;
-  display: none;
+  max-height: 0;
+  transition: max-height 0.5s ease-out, visibility 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
 }
 
 .companies li:hover .moreInfoDrop {
-  display: block;
   visibility: visible;
   opacity: 1;
+  max-height: 90px;
+  transition: max-height 0.5s ease-in, visibility 0.5s ease-in, opacity 0.5s ease-in;
 }
 
 
@@ -303,3 +305,20 @@ nav > ul li a:hover {
   font-size: 1.5em;
   margin-right: 5px;
   }
+#resume {
+  position: relative;
+  bottom: 13px;
+}
+#resume:hover {
+  background-color: #E15119;
+  transition: 0.5s;
+}
+
+.resume {
+  font-size: 1em !important;
+}
+.resume a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
