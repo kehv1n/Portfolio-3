@@ -1,6 +1,7 @@
 ///DOCUMENT READY
 $(document).ready(function() {
 
+  // let spanButton = document.getElementsByClassName('.megaButton');
 
   function fadeName(){ //Begin fades
     $('#header h1').fadeTo(800, 1.0, function(){
@@ -40,11 +41,8 @@ $(document).ready(function() {
 
 
 
-
-
   backgroundChange();
   fadeName();
-
 
 
 
