@@ -83,24 +83,36 @@ let src = LIBRARY.books[indexNumForward].src;
 
   ////INTERATICE BACK + NEXT BUTTON ///
 
-  function changeNextStyle() {
-    document.getElementById('nxt').style.backgroundColor = 'white';
-    document.getElementById('nxt').style.color = '#111';
-    document.getElementById('nxt').style.border = '1px solid black';
-  }
+  function changeStyle(theColor, whichButton) {
+    ///THE BACK BUTTON
+    let B = $('#back');
 
-  function changeNxtBack() {
-    document.getElementById('nxt').style.backgroundColor = '#111';
-    document.getElementById('nxt').style.color = 'white';
-  }
+    //THE NEXT BUTTON
+    let N = $("#nxst");
+    switch(whichButton){
+      //CASE THE BACK BUTTON
+      case B:
+        checkColor(theColor, whichButton);
+      break;
+      //CASE THE NEXT BUTTON
 
-  function changeBackStyle() {
-    document.getElementById('back').style.backgroundColor = '#111';
-    document.getElementById('back').style.color = 'white';
-  }
+      case N:
+        checkColor(theColor, whichButton);
+      break;
 
-  function changeBckStyleBack() {
-    document.getElementById('back').style.backgroundColor = 'white';
-   document.getElementById('back').style.color = '#111';
-   document.getElementById('back').style.border = '1px solid black';
+    }
+  }
+  //COLOR CHECKER
+  function checkColor(aColor, btn){
+    if (aColor === 'negative') {
+      btn.toggleClass('negative');
+    }
+
+    if (aColor === 'positive') {
+      btn.toggleClass('positive');
+    }
+
+    else {
+      console.log('not negative or positive');
+    }
   }
